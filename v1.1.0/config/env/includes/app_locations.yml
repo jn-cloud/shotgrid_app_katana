@@ -1,0 +1,53 @@
+# REPLACE any existing mappings with these
+
+################################################################################
+# location descriptors for apps used in this configuration
+
+# ---- Multi apps
+
+# loader2
+# apps.tk-multi-loader2.location:
+#     type: git
+#     path: git@github.com:wwfxuk/tk-multi-loader2.git
+#     version: v1.19.3+wwfx.1.0.0
+
+apps.tk-multi-loader2.location:
+  type: app_store
+  name: tk-multi-loader2
+  version: v1.22.0
+
+# publish2
+# apps.tk-multi-publish2.location:
+#     type: git
+#     path: git@github.com:wwfxuk/tk-multi-publish2.git
+#     version: v2.3.4+wwfx.1.0.0
+
+apps.tk-multi-publish2.location:
+  type: app_store
+  name: tk-multi-publish2
+  version: v2.6.3
+
+# workfiles2
+# apps.tk-multi-workfiles2.location:
+#   type: git
+#   path: git@github.com:wwfxuk/tk-multi-workfiles2.git
+#   version: v0.11.10+wwfx.1.0.0
+
+apps.tk-multi-workfiles2.location:
+  type: app_store
+  name: tk-multi-workfiles2
+  version: v0.13.1
+
+# ---- Katana apps
+
+# lookfilebake node
+# apps.tk-katana-lookfilebakenode.location:
+#     type: git
+#     path: git@gitlab.wwfx.co.uk:shotgun/tk-katana-lookfilebakenode.git
+#     version: v1.0.3
+
+# # renderoutputdefine node
+# apps.tk-katana-renderoutputdefinenode.location:
+#     type: git
+#     path: git@gitlab.wwfx.co.uk:shotgun/tk-katana-renderoutputdefinenode.git
+#     version: v1.0.0

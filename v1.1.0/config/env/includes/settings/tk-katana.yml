@@ -1,0 +1,118 @@
+# Create a new tk-katana.yml file containing ALL these Katana settings.
+# Some apps are still work in progress to get them supported.
+
+
+includes:
+- ../app_locations.yml
+- ../engine_locations.yml
+- ./tk-multi-loader2.yml
+- ./tk-multi-publish2.yml
+# - ./tk-multi-screeningroom.yml
+# - ./tk-multi-shotgunpanel.yml
+# - ./tk-multi-snapshot.yml
+- ./tk-multi-workfiles2.yml
+- ./tk-katana-lookfilebakenode.yml
+- ./tk-katana-renderoutputdefinenode.yml
+
+################################################################################
+
+# asset
+settings.tk-katana.asset:
+  apps:
+    tk-multi-about:
+      location: "@apps.tk-multi-about.location"
+    # tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    # tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.katana"
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  - {app_instance: tk-multi-workfiles2, name: File Save...}
+  location: "@engines.tk-katana.location"
+
+# asset_step
+settings.tk-katana.asset_step:
+  apps:
+    tk-multi-about:
+      location: "@apps.tk-multi-about.location"
+    # tk-multi-breakdown:
+    #   location: "@apps.tk-multi-breakdown.location"
+    tk-multi-loader2: "@settings.tk-multi-loader2.katana"
+    tk-multi-publish2: "@settings.tk-multi-publish2.katana.asset_step"
+    # tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    # tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.katana"
+    # tk-multi-snapshot: "@settings.tk-multi-snapshot.katana.asset_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.katana.asset_step"
+    tk-katana-lookfilebakenode: "@settings.tk-katana-lookfilebakenode.asset"
+    tk-katana-renderoutputdefinenode: "@settings.tk-katana-renderoutputdefinenode.asset"
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  - {app_instance: tk-multi-workfiles2, name: File Save...}
+  # - {app_instance: tk-multi-snapshot, name: Snapshot...}
+  - {app_instance: tk-multi-loader2, name: Load}
+  - {app_instance: tk-multi-publish2, name: Publish...}
+  location: '@engines.tk-katana.location'
+
+# project
+settings.tk-katana.project:
+  apps:
+    tk-multi-about:
+      location: "@apps.tk-multi-about.location"
+    # tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    # tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.katana"
+    tk-katana-lookfilebakenode: "@settings.tk-katana-lookfilebakenode.shot"
+    tk-katana-renderoutputdefinenode: "@settings.tk-katana-renderoutputdefinenode.shot"
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  location: "@engines.tk-katana.location"
+
+# sequence
+settings.tk-katana.sequence:
+  apps:
+    tk-multi-about:
+      location: "@apps.tk-multi-about.location"
+    # tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    # tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.katana"
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  - {app_instance: tk-multi-workfiles2, name: File Save...}
+  location: "@engines.tk-katana.location"
+
+# shot
+settings.tk-katana.shot:
+  apps:
+    tk-multi-about:
+      location: "@apps.tk-multi-about.location"
+    # tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    # tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.katana"
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  - {app_instance: tk-multi-workfiles2, name: File Save...}
+  location: "@engines.tk-katana.location"
+
+# shot_step
+settings.tk-katana.shot_step:
+  apps:
+    tk-multi-about:
+      location: "@apps.tk-multi-about.location"
+    # tk-multi-breakdown:
+    #   location: "@apps.tk-multi-breakdown.location"
+    # tk-multi-setframerange:
+    #   location: "@apps.tk-multi-setframerange.location"
+    tk-multi-loader2: "@settings.tk-multi-loader2.katana"
+    tk-multi-publish2: "@settings.tk-multi-publish2.katana.shot_step"
+    # tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    # tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.katana"
+    # tk-multi-snapshot: "@settings.tk-multi-snapshot.katana.shot_step"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.katana.shot_step"
+    tk-katana-lookfilebakenode: "@settings.tk-katana-lookfilebakenode.shot"
+    tk-katana-renderoutputdefinenode: "@settings.tk-katana-renderoutputdefinenode.shot"
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  - {app_instance: tk-multi-workfiles2, name: File Save...}
+  # - {app_instance: tk-multi-snapshot, name: Snapshot...}
+  - {app_instance: tk-multi-loader2, name: Load}
+  - {app_instance: tk-multi-publish2, name: Publish...}
+  location: '@engines.tk-katana.location'

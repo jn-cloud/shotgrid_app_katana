@@ -1,0 +1,12 @@
+# Add the following Katana settings section
+
+# Katana
+# engines.tk-katana.location:
+#   type: git
+#   path: git@github.com:wwfxuk/tk-katana.git
+#   version: v0.1.0+wwfx.1.7.0
+
+# Tcs adding katana location 23_06_22
+engines.tk-katana.location:
+  type: dev
+  path: /mnt/assets/.Dev_data/configs/katana_sg_dev/install/apps/tk-katana/v0.1.0
